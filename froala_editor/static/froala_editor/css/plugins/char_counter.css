@@ -1,15 +1,9 @@
-/*!
- * froala_editor v2.9.3 (https://www.froala.com/wysiwyg-editor)
- * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2019 Froala Labs
- */
-
 .clearfix::after {
   clear: both;
   display: block;
   content: "";
-  height: 0;
-}
+  height: 0; }
+
 .hide-by-clipping {
   position: absolute;
   width: 1px;
@@ -18,19 +12,19 @@
   margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  border: 0;
-}
+  border: 0; }
+
 .fr-box .fr-counter {
   position: absolute;
   bottom: 0px;
   padding: 5px;
   right: 0px;
-  color: #cccccc;
+  color: #CCCCCC;
   content: attr(data-chars);
   font-size: 15px;
   font-family: "Times New Roman", Georgia, Serif;
   z-index: 1;
-  background: #ffffff;
+  background: #FFF;
   border-top: solid 1px #ebebeb;
   border-left: solid 1px #ebebeb;
   border-radius: 2px 0 0 0;
@@ -38,8 +32,7 @@
   -webkit-border-radius: 2px 0 0 0;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
+  background-clip: padding-box; }
 .fr-box.fr-rtl .fr-counter {
   left: 0px;
   right: auto;
@@ -50,8 +43,9 @@
   -webkit-border-radius: 0 2px 0 0;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
+  background-clip: padding-box; }
+
 .fr-box.fr-code-view .fr-counter {
-  display: none;
-}
+  display: none; }
+
+/*# sourceMappingURL=char_counter.css.map */
