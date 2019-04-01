@@ -54,20 +54,6 @@ When used outside the Django admin, the media files are to be manually included 
 {{ form.media }}
 ```
 
-In case of jQuery conflict (when your project template already has jQuery), you need to include the following files instead of `{{ form.media }}` plus the static files for theme (if not default) and required plugins.
-
-```python
-<link href="{{STATIC_URL}}froala_editor/css/froala_editor.min.css" type="text/css" media="all" rel="stylesheet" />
-<link href="{{STATIC_URL}}froala_editor/css/froala_style.min.css" type="text/css" media="all" rel="stylesheet" />
-<script type="text/javascript" src="{{STATIC_URL}}froala_editor/js/froala_editor.min.js"></script>
-```
-
-Or simply, you may use the following in your `settings.py` if you don't want Froala to include jQuery by itself, thus preventing any conflicts:
-
-```python
-FROALA_INCLUDE_JQUERY = False
-```
-
 ### Options
 
 Froala Editor provides several options for customizing the editor. See [https://froala.com/wysiwyg-editor/docs](https://froala.com/wysiwyg-editor/docs) for all available options.
